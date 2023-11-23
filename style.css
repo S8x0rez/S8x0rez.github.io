@@ -1,16 +1,104 @@
-header {
-	display: flex;
-	width: 100%;
-	height: 50px;
+* {
+	margin: 0px;
+}
+
+* html body {
+	overflow: hidden;
+}
+
+body {
 	background-color: #383838;
 }
 
-.left-header {
-	font-size: 30px;
-	margin-left: 20px;
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-.right-header {
-	font-size: 18px;
-	margin-left: auto;
+header {
+	position: fixed !important;
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	display: flex;
+	background-color: #262626;
+	color: #CCC;
+}
+
+.header-in {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 9px;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+}
+
+.header-item {
+	padding:5px;
+	margin: 8px;
+}
+
+#title {
+	padding-top:6px;
+	font-size: 24px;
+}
+
+.content {
+	padding-top: 45px;
+	height: 100%;
+	overflow: auto;
+	display:flex
+}
+
+.profile {
+	text-align: center;
+	border-radius: 40px;
+	background-color: #ffffff;
+}
+
+.my-name {
+	font-size: 20px;
+}
+
+.prof-icon {
+	width: 200px;
+	height: 200px;
+	border-radius: 50px;
+}
+
+.prof-item {
+	width: 35px;
+	height: 35px;
+}
+
+.content li {
+	list-style-type: none;
+	position: relative;
+	padding-left: 1em;
+}
+.content li::before {
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 1em;
+	content: "";
+	background: white;
+}
+
+.main-area {
+	padding-left: 30px;
+	padding-top: 40px;
+}
+
+.main-item {
+	font-size: 25px;
+	color: white;
 }
